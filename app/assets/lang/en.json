@@ -1,0 +1,100 @@
+{
+    "profileScreen": {
+        "logout": "Logout",
+        "roles": "Roles:",
+        "fullName": "Full name:",
+        "accountCreatedAt": "Account created:",
+        "feedbackTitle": "Found a bug or have a suggestionы?",
+        "feedbackDescription": "Tell us, we would love to hear!",
+        "feedbackTextInputPlaceholder": "Write your thoughts...",
+        "feedbackTextInputShorterThanThree": "The feedback should be at least 3 long",
+        "feedbackTextInputShorterLongerThanFiveHundred": "That is a pretty big feedback, try sending it in parts",
+        "feedbackSubmit": "Send",
+        "modalFullNameTitle": "Change Full Name",
+        "modalFullNameTextInputLabel": "Full name",
+        "modalFullNameTextInputPlaceholder": "John Smith",
+        "modalFullNameTextInputShorterThanThree": "The name should be at least 3 long",
+        "modalFullNameTextInputSubmit": "Update name"
+    },
+    "aiScreen": {
+        "mainInformationTitle": "Let AI teach you a new thing",
+        "mainInformationDescription": "Using the latest of AI technologies to improve your learning curve and your knowledgebase",
+        "subjectComingSoon": "Coming soon...",
+        "subjectRussian": "Russian",
+        "subjectRussianDescription": "EGE",
+        "subjectEssay": "Essay",
+        "subjectPhysics": "Physics"
+    },
+    "customizeExerciseScreen": {
+        "headerDescription": "Choose the exercises you want to practise",
+        "selectAllExercises": "Select all",
+        "deselectAllExercises": "Deselect all",
+        "startExercising": "Start exercising"
+    },
+    "topicScreen": {
+        "headerTitle" : "Practise",
+        "exerciseText" : "Exercise",
+        "textInputPlaceholder" : "Answer",
+        "submit" : "Check",
+        "openExplanation" : "Open explanation...",
+        "hideExplanation" : "Hide explanation",
+        "correctAnswerText" : "Correct answer:",
+        "explanationText": "Explanation:",
+        "getHelpFromAiButton": "Get help from",
+        "nextButton": "Next",
+
+        "drawerTitle": "Coming soon 🎉",
+        "drawerDescriptionTester": "You are a tester!",
+        "drawerDescriptionSentRequest": "You already sent your request to become a tester, we will notify you 😊",
+        "drawerDescription": "Become a tester to get access to AI and much more!",
+        "drawerTextInputLabel": "Leave a message so we can give you access",
+        "drawerTextInputPlaceholder": "Your message...",
+        "drawerTextInputError": "Message should be at least 4 characters long",
+        "drawerSubmitText": "Submit"
+    },
+    "essayScreen": {
+        "scannerButtonHeader" : "Scan or choose essay photos",
+        "mainHeader" : "Write your essay",
+        "mainDescription" : "AI will give you advice",
+        "topicTextInputLabel": "Essay topic",
+        "topicTextInputPlaceholder": "Any topic",
+        "topicTextInputError": "The topic should be at least 3 characters long",
+        "topicContentTextInputLabel": "Essay",
+        "topicContentTextInputPlaceholder": "Express yourself...",
+        "topicContentTextInputError": "The essay should be at least 10 characters long",
+        "sendButtonUsedAllTriesText" : "Tries exhausted",
+        "sendButtonSendText" : "Send",
+        "sendButtonResendText" : "Resend",
+        "sendButtonUsedText" : "Used"
+    },
+    "learnScreen": {
+        "headerTitle" : "Learn a new thing!",
+        "headerDescription": "Coming soon..."
+    },
+    "loginScreen": {
+        "mainLoginHeader": "Login",
+        "mainRegisterHeader": "Register",
+        "loginUsernameTextInputLabel": "Username",
+        "loginUsernameTextInputPlaceholder": "Mike",
+        "loginUsernameTextInputError": "Please provide a username",
+        "loginPasswordTextInputLabel": "Password",
+        "loginPasswordTextInputError": "Please provide a password",
+        "loginSubmitText": "Login",
+        "loginSwitchToRegister": "Don't have an account? Register",
+        "registerFullNameTextInputLabel": "FullName",
+        "registerFullNameTextInputPlaceholder": "Mike Norman",
+        "registerFullNameTextInputError": "FullName should be at least 3",
+        "registerUsernameTextInputLabel": "Username",
+        "registerUsernameTextInputPlaceholder": "Mike",
+        "registerUsernameTextInputError": "Username should be at least 2",
+        "registerPasswordTextInputLabel": "Password",
+        "registerPasswordTextInputError": "Password should be at least 5",
+        "registerSubmitText": "Register",
+        "registerSwitchToLogin": "Already have an account? Login",
+
+        "loginError": "Wrong username or password",
+        "registerError": "User already exists"
+    },
+    "hali": "{translate('loginScreen.logout')}",
+    "hali1": "const [translate] = useLanguage();"
+}
