@@ -55,6 +55,21 @@ Now that you have successfully run the app, let's modify it.
 
    For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
+## step 4: Build your App
+
+We have tested the app so it is time to build it and show it to the world
+
+```bash
+# run this command to build the app and test it on the phone
+npm run android -- --mode="release"
+
+# or this to just build it
+gradle assembleRelease
+
+# and to do gradle clean, just in cas
+gradle clean
+```
+
 ## Congratulations! :tada:
 
 You've successfully run and modified your React Native App. :partying_face:
