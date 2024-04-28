@@ -1,20 +1,3 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-
-
-
-// import { Ionicons, MaterialCommunityIcons, AntDesign } from 'react-native-vector-icons';
-// import Icon as FontAwesome from 'react-native-vector-icons/dist/FontAwesome'
-import Ionicons from 'react-native-vector-icons/dist/Ionicons';
-import MaterialCommunityIcons from 'react-native-vector-icons/dist/MaterialCommunityIcons';
-import AntDesign from 'react-native-vector-icons/dist/AntDesign';
-
-import LearnScreen from '../home/LearnScreen';
-import PractiseScreen from '../home/PractiseScreen';
-import AiScreenNavigation from './AiScreenNavigation';
-import ProfileScreen from '../home/ProfileScreen';
-import useStore from '../libs/statusMachine';
 
 const Tab = createBottomTabNavigator();
 
@@ -222,15 +205,3 @@ const HomeTabs = () => {
 
 export default HomeTabs
 
-const styles = StyleSheet.create({
-    shadow: {
-        // shadowColor: '#7F5DF0',
-        // shadowOffset: {
-        //     width: 0,
-        //     height: 10,
-        // },
-        // shadowOpacity: 0.25,
-        // shadowRadius: 3.5,
-        // elevation: 5
-    }
-})

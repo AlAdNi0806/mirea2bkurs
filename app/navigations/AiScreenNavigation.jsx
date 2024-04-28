@@ -1,10 +1,3 @@
-import React from 'react'
-import {createStackNavigator} from '@react-navigation/stack'
-import EssayScreen from '../home/aiScreen/EssayScreen';
-import AiScreen from '../home/AiScreen';
-import TopicScreen from '../home/aiScreen/TopicScreen';
-import CustomizeExerciseScreen from '../home/aiScreen/CustomizeExerciseScreen';
-
 
 const Stack = createStackNavigator();
 

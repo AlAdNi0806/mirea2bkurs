@@ -1,21 +1,4 @@
-import { ActivityIndicator, Image, Keyboard, Modal, Pressable, ScrollView, StyleSheet, Text, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native'
-import React, { useEffect, useRef, useState, } from 'react'
-import { useAuth } from '../context/AuthContext';
-import useStore from '../libs/statusMachine';
-import { ChangeLanguage, ChangeUserFullName, GetUserDetails, GiveFeedback } from '../libs/queries';
-import { useFocusEffect } from '@react-navigation/native';
-import AntDesign from 'react-native-vector-icons/dist/AntDesign';
-import Ionicons from 'react-native-vector-icons/dist/Ionicons';
-import { format, parseISO } from 'date-fns';
 
-import { BlurView } from "@react-native-community/blur";
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import RNTextArea from '@freakycoder/react-native-text-area';
-
-import { Notifier, Easing, NotifierComponents } from 'react-native-notifier';
-import { useLanguage } from '../context/LanguageContext';
-
-import { Dropdown } from 'react-native-element-dropdown';
 
 const ReusableModal = ({ isVisible, onClose, onChangeText, onSubmitText, title, inputTextLabel, inputFieldError, placeHolderText, submitButtonText, pending }) => {
   return (

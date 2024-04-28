@@ -1,8 +1,3 @@
-import { Animated, FlatList, Image, ImageBackground, ScrollView, StyleSheet, Text, View } from 'react-native'
-import React, { useState } from 'react'
-import { useLanguage } from '../context/LanguageContext'
-
-
 
 const Skeleton = () => {
   return (

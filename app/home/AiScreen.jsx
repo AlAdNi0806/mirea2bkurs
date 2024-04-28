@@ -1,14 +1,3 @@
-import { Dimensions, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
-
-
-
-import Ionicons from 'react-native-vector-icons/dist/Ionicons';
-import { useNavigation } from '@react-navigation/native';
-import { confirmedSubjects } from '../constants/subjects';
-import useStore from '../libs/statusMachine';
-import { useLanguage } from '../context/LanguageContext';
-
 
 
 const { width } = Dimensions.get('window');

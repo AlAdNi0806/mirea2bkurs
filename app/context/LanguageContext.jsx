@@ -1,14 +1,9 @@
-import React from 'react';
-import { NativeModules, I18nManager, Platform } from 'react-native';
-import en from '../assets/lang/en.json';
-import ru from '../assets/lang/ru.json';
 
 const LanguageContext = React.createContext(null);
 
 export  function LanguageProvider({ initialState = 'en', children }) {
 
-    const deviceLanguage = NativeModules.I18nManager.localeIdentifier;
-    const languageCode = deviceLanguage.split('_')[0];
+    const languageCode = deviceLanguage.split()[0];
 
     // console.log("languageCode")
     // console.log("languageCode")

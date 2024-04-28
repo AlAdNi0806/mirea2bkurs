@@ -1,18 +1,3 @@
-import { ActivityIndicator, Button, Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React, { useEffect, useMemo, useState } from 'react'
-import DocumentScanner from 'react-native-document-scanner-plugin'
-import axios from 'axios';
-import TextRecognition from '@react-native-ml-kit/text-recognition';
-import { FixWrittenText, GetAiResponseForEssay, GetFeedbackOnEssayQuery, SendImage } from '../../libs/queries';
-import AntDesign from 'react-native-vector-icons/dist/AntDesign';
-import MaterialCommunityIcons from 'react-native-vector-icons/dist/MaterialCommunityIcons';
-import { useAuth } from '../../context/AuthContext';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import useStore from '../../libs/statusMachine';
-import Markdown from 'react-native-markdown-display';
-import { useLanguage } from '../../context/LanguageContext';
-
-
 
 
 const EssayScreen = () => {
@@ -78,41 +63,6 @@ const EssayScreen = () => {
         }
     }
 
-
-    const uploadImage = async (scannedImagePath) => {
-        const formData = new FormData();
-        const file = {
-            uri: scannedImagePath, // Make sure this is the correct path to your image
-            type: 'image/png', // Adjust the type based on your image
-            name: 'texttoimage.png', // The name of the file
-        };
-
-        formData.append('srcImg', file);
-        formData.append('Session', 'string');
-
-        const config = {
-            method: 'post',
-            url: 'https://pen-to-print-handwriting-ocr.p.rapidapi.com/recognize/',
-            headers: {
-                'X-RapidAPI-Key': '0257dcebbcmsh81391cc153bb7d1p14211djsnfee03c987566',
-                'X-RapidAPI-Host': 'pen-to-print-handwriting-ocr.p.rapidapi.com',
-                'Content-Type': 'multipart/form-data',
-            },
-            data: formData,
-            transformRequest: (data, headers) => {
-                // Prevent Axios from converting FormData to a string
-                return data;
-            },
-        };
-
-        try {
-            const response = await axios(config);
-            console.log(response.data);
-            setText(response.data)
-        } catch (error) {
-            console.error(error);
-        }
-    };
 
     useEffect(() => {
         if (topicSelected || topicContentSelected) {
